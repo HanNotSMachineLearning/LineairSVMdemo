@@ -135,3 +135,10 @@ plt.show()
 ```
 is alleen nodig om de grafiek te plotten. Zonder deze grafiek werkt de code prima, alleen zie je niks visueels. Als je alleen de code wil zonder de grafiek kan je dat stuk code in commentaar zetten. 
 
+## Resultaat applicatie
+Als de applicatie gedraaid wordt, wordt er in de console gevraagd naar de resultaten die je wil voorspellen. De uitkomst hiervan,als de grafiek niet als comment gezet is, zal er ongeveer zo uitzien. 
+![Resultaat van de applicatie met grafiek](result.png)
+
+## Bruikbaarheid SVM-linear
+SVM-linear is voor onze casus niet bruikbaar. Dit komt omdat deze methode alleen maar werkt met coördinaten op een x- en y-as, dit komt niet overeen met onze data, namelijk een set features met een label eraan gekoppeld. 
+
