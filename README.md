@@ -20,6 +20,7 @@ Voer de volgende commando's uit om alles te installeren: <br>
 - pip install numpy
 - pip install matplotlib
 - pip install sklearn
+- pip install scipy
 ```
 
 Voer het volgende commando uit in een console in de source-map van je project:
@@ -69,10 +70,10 @@ print("X-coördinaat: ", xC)
 
 # Y-coördinaat aan de gebruiker vragen
 yC = input("Welke y-coördinaat wil je voorspellen?")
-print("X-coördinaat: ", yC)
+print("Y-coördinaat: ", yC)
 
 # De voorspelling maken van de opgegeven coördinaten en deze printen
-voorspelling = clf.predict([float(xC),float(yC)])
+voorspelling = clf.predict([[float(xC),float(yC)]])
 print("Voorspelling voor coördinaten: (",([float(xC),float(yC)]),"), de voorspelling valt binnen categorie ", voorspelling)
 
 w = clf.coef_[0]
